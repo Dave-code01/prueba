@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de git</title>
+
+    <!-- Estilos para la barra de bienvenida -->
+    <style>
+        #welcome-bar {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 16px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            margin-top: 50px;
+        }
+
+        #close-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: rgb(25, 26, 60);
+            color: #007BFF;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #close-btn:hover {
+            background-color: #33639b;
+        }
+    </style>
+
+    <!-- Script para cerrar la barra de bienvenida -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('close-btn').addEventListener('click', function() {
+                document.getElementById('welcome-bar').style.display = 'none';
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Barra de bienvenida -->
+    <div id="welcome-bar">
+
+        <button id="close-btn">X</button>
+    </div>
+
+    <!-- Contenido de la página -->
+    <div class="content">
+        <h1>Bienvenidos a este tutorial </h1>
+        <p>Aprenderemos paso a paso, como utilizar Git </p>
+        <!-- Aquí irá el resto del contenido de tu página -->
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Blog con Imágenes</title>
+        </head>
+        <body>
+        
+            <h1>En este blog detallaremos paso a paso como debemos de crear un repositorio en git hub, utilizando herramientas como GIT BASH</h1>
+            
+            <p></p>
+            
+            <!-- Imagen 1 -->
+            <h2>Que es Git?</h2>
+            <h3>Git es un sistema de control de versiones distribuido desarrollado por Linus Torvalds en 2005. Se diseñó originalmente para gestionar el desarrollo del kernel de Linux, pero su flexibilidad y eficiencia lo convirtieron en una herramienta ampliamente adoptada en la industria del software. En esencia, Git permite rastrear los cambios en el código fuente a lo largo del tiempo, lo que facilita la colaboración entre desarrolladores y la gestión del ciclo de vida del software.</h3>
+            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1663005542361/8wsEFFAse.jpg?auto=compress,format&format=webp"p
+            alt="Paso 1" width="500" height="300">
+        
+            <!-- Imagen 2 -->
+            <h2>Paso 1 Descarga de git</h2>
+            <h3>como primer paso es importante realizar la descarga de git en nuestro computadora</h3>
+            <a href="https://git-scm.com/downloads/win" target="_blank">Descarga Git</a>
+            en el link que adjuntamos a continuacion
+
+            <h4>Paso 1 : A travez del comando  git config --global user.name "Tu Nombre" y git config --global user.email "tu@email.com"
+                vamos a ingresar los datos solicitados como el nombre y el correo electronico.
+
+                <img src="Imagenes/git config.png"
+
+                <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paso 2</title>
+</head>
+<body>
+    <h1>Paso 2</h1>
+    <img src="Imagenes/git init.jpg" 
+
+    <p>inicializacion del repositorio</p> primero vamos a abrir la terminal del proyecto, Luego ejecutamos el comando Git Init y posteriormente se creara el repositorio en la carpeta
+    <h1>Paso 3</h1> vamos a usar el comando Git Add
+
+    <img src="Imagenes/git add.png"
+
+    <p>para posteriormente ingresar los comentarios acerca de los cambios realizados 
+        en el proyecto utilizando el comando "Git Commit - m"
+      cImagenes/Git Commmint -m .png"
+
+
+      <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Texto</title>
+</head>
+<body>
+    <h1>Paso 4</h1>
+    <p>posteriormente vamos a utilizar el comando git branch para  crear una nueva rama que nos permita trabajar de manera independiente</p>
+    <img src="Imagenes/git branch.png"
+    <p>luego vamos a asignar la rama.</p>
+    <img src="Imagenes/Git branch nueva rama.png"
+    <p>por ultimo vamos a integrar los cambios de una rama a la otra este proceso es conocido como "MERGE"
+
+    </p> por medio de los comandos git checkout rama-destino y git merge rama-origen
+
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo de Texto</title>
+    </head>
+    <body>
+        <h1>Creacion de un repositorio remoto por medio de GITHUB</h1>
+        <img src="Imagenes/Nuevo repositorio.png"
+        <p>Luego de crear el repositorio es necesario utilizar los comandos git remote add origin e ingreasar el enlace del repositorio.</p>
+        
+        <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo de Texto</title>
+    </head>
+    <body>
+        <h1>Conectar el repositorio</h1>
+        <img src="Imagenes/git remote.png"
+        
+        
+        
+        <p>Luego de conectar el repositorio es necesario utilizar el comando Git push origin </p>
+
+        <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo de Texto</title>
+    </head>
+    <body>
+        <h1>Este seria el ultimo paso para finalizar el proceso</h1>
+        <img src="Imagenes/git push origin main.png"
+
+    </body>
+    </html>
+    
+
+
+
+
+</body>
+</html>
+
+
+
+   
+
+        .</p>
+</body>
+</html>
+
+
+
+            
+            
+            
+            
+    
+                
+            
+
+            
+            
+        
+        </body> 
+        </html>
+        
+    </div>
+
+</body>
+</html>
